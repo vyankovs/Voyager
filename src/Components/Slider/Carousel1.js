@@ -1,7 +1,6 @@
 import React from "react";
 import { slides } from './dataImg'
-import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBContainer } from
-    "mdbreact";
+import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBContainer } from "mdbreact";
 
 const Carousel1 = () => {
 
@@ -31,7 +30,7 @@ const Carousel1 = () => {
                                 </MDBView>
                                 <MDBCarouselCaption>
                                     <h1 className="h1-responsive">{data.title}</h1>
-                                    <a type="button" href="/overview">discover</a>
+                                    <a type="button" href={`/overview/${data.title}`}>discover</a>
                                 </MDBCarouselCaption>
                             </MDBCarouselItem>
                         ))

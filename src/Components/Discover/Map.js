@@ -13,6 +13,7 @@ const Map = ({ city, setPlaceId, center, setCenter }) => {
       fetch(`${APIurl}/json?query=${city}&language=en&key=${key}`)
         .then((res) => res.json())
         .then((data) => {
+          data &&
           setCenter(data.results[0].geometry.location);
           setZoom(10);
           setPlaceId(data.results[0].place_id);

@@ -1,48 +1,39 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 
+const Topbar = ({data}) => {
+  
 
+  return (
+    <nav className="topbar">
+      <ul>
+    
+      <li>
+          {data.subregion}
+          <small className="text-muted">Region</small>
+        </li>
+        <li>
+          <img src={data.flag} width="40" height="30"></img>
+          <small className="text-muted">Flag</small>
+        </li>
+        <li>
+          {(data.population / 1000000).toFixed(1)}
+          <small className="text-muted">Population, million</small>
+        </li>
+        <li>
+          {data.capital}
+          <small className="text-muted">Capital</small>
+        </li>
+       
+       
+        <li>
+          <p>
+            {data.currencies && data.currencies[0].name} ({data.currencies && data.currencies[0].symbol})
+            <small className="text-muted">Local currency</small>
+          </p>
+        </li>
+      </ul>
+    </nav>
+  );
+};
 
-const Topbar = () => {
-
-    const data =
-    {
-        city: "Brussels",
-        zone: "Capital",
-        area: "2464",
-        population: "2",
-        quantity: "millions",
-        time: "17:05",
-        timezone: "GMT+1",
-        currency: "Euro"
-    }
-
-
-    return (
-        <nav className="topbar">
-            <ul>
-                <li>
-                    {data.city}
-                    <small className="text-muted">{data.zone}</small>
-                </li>
-                <li>
-                    {data.area}
-                    <small className="text-muted">Area, sq.km</small>
-                </li>
-                <li>
-                    {data.population}
-                    <small className="text-muted">Population, {data.quantity}</small>
-                </li>
-                <li>
-                    {data.time}
-                    <small className="text-muted">{data.timezone}</small>
-                </li>
-                <li>
-                    {data.currency}
-                    <small className="text-muted">Local currency</small>
-                </li>
-            </ul>
-        </nav>
-    )
-}
-
-export default Topbar
+export default Topbar;

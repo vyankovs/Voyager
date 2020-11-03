@@ -7,9 +7,8 @@ import 'mdbreact/dist/css/mdb.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  
+    <App />,
   document.getElementById('root')
 );
 

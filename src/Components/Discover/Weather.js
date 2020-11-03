@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { FaCloudSunRain } from "react-icons/fa";
+
+
 
 let APIurl =
   "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/details";
@@ -33,26 +34,31 @@ const Weather = ({ placeId, center }) => {
     <div className="weather">
       <div className="photos">
         <p>Photos of the city</p>
+       
+       { photos ? 
         <div>
-          {photos.slice(0, 9).map((photo, k) => (
+        {photos.slice(0, 9).map((photo, k) => (
             <img
               key={k}
               src={`${PhotoAPI}?&key=${key}&photoreference=${photo.photo_reference}&maxheight=200`}
             />
-          ))}
-        </div>
+          )) }
+          </div>
+          : <img style = {{height:"300px", width:"300px"}} src={"https://vcunited.club/wp-content/uploads/2020/01/No-image-available-2.jpg"}></img>}
+        
       </div>
       <div className="forecast">
         <p>Weather</p>
         {weatherObj ? (
           <div className="forecast-grid">
+         
             <img
               src={`http://openweathermap.org/img/w/${weatherObj.weather[0].icon}.png`}
             ></img>
             <p>{Math.floor(weatherObj.main.temp)}°C </p>
             <small className="text-muted">
               {weatherObj.weather[0].description}{" "}
-            </small>
+            </small> 
           </div>
         ) : null}
       </div>

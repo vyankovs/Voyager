@@ -1,4 +1,5 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
+
 import { Search } from './Search'
 import Carousel1 from './Slider/Carousel1'
 
@@ -6,6 +7,7 @@ import Carousel1 from './Slider/Carousel1'
 
 const Home = () => {
 
+   
     return (
         <Fragment>
             <Search />
