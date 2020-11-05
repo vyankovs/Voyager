@@ -12,7 +12,6 @@ function App() {
         <Switch>
           <Route exact path="/"><Home /> </Route>
           <Route path="/overview/:country"><Overview /> </Route>
-          
         </Switch>
       </div>
     </BrowserRouter>

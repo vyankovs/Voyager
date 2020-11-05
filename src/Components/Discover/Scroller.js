@@ -20,17 +20,7 @@ function shuffle(array) {
   
   return array;
   }
-// const cities = [
-//   "Antwerp",
-//   "Ghent",
-//   "Charleroi",
-//   "Liège",
-//   "Brussels",
-//   "Bruges",
-//   "Namur",
-//   "Leuven",
-//   "Mons",
-// ];
+
 
 const Scroller = Radium(({ setCity, capital, country, code }) => {
   const [selected, setSelected] = useState("");
