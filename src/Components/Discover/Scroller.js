@@ -55,42 +55,7 @@ fetch('https://raw.githubusercontent.com/russ666/all-countries-and-cities-json/m
 setCities(shuffle(data[coun]))}
 )
 
-  //   if(code){
-  //   fetch(`https://wft-geo-db.p.rapidapi.com/v1/geo/countries/${code}/regions?limit=8`, {
-  //     "method": "GET",
-  //     "headers": {
-  //       "x-rapidapi-host": "wft-geo-db.p.rapidapi.com",
-  //       "x-rapidapi-key": "b5f62f0181msh0abbfff925e5d2bp1500dajsnb77df52c0ef1"
-  //     }
-  //   })
-  //   .then(response => 
-  //     response.json()
-  //   ).then(data=> 
-  //     data.data&&
-  //     data.data.forEach((e,index) => {
-  //     let newCities = cities;
-  //  setTimeout(() => {
-  //   fetch(`https://wft-geo-db.p.rapidapi.com/v1/geo/countries/${code}/regions/${e.fipsCode}`, {
-  //     "method": "GET",
-  //     "headers": {
-  //       "x-rapidapi-host": "wft-geo-db.p.rapidapi.com",
-  //       "x-rapidapi-key": "b5f62f0181msh0abbfff925e5d2bp1500dajsnb77df52c0ef1"
-  //     }
-  //   })
-  //   .then(response => 
-  //     response.json()
-  //   ).then(data=>{
-  //     data.data && data.data.capital!== capital && newCities.push(data.data.capital)
-  //     setCities(newCities)
-  //   })
-  //  }, 2000*index);
-      
-  // }
-  // )
-  // )
-      
-    
-  // }
+  
 },
    [code]);
 
