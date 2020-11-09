@@ -30,7 +30,7 @@ const Carousel1 = () => {
                                 </MDBView>
                                 <MDBCarouselCaption>
                                     <h1 className="h1-responsive">{data.title}</h1>
-                                    <a type="button" href={`/overview/${data.title}`}>discover</a>
+                                    <a type="button" href={`/Voyager/#/overview/${data.title}`}>discover</a>
                                 </MDBCarouselCaption>
                             </MDBCarouselItem>
                         ))
