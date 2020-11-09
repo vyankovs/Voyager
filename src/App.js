@@ -10,7 +10,7 @@ function App() {
     <HashRouter>
       <div className="main-container">
         <Switch>
-          <Route exact path="/Voyager/#/"><Home /> </Route>
+          <Route exact path="/"><Home /> </Route>
           <Route path="/Voyager/#/overview/:country"><Overview /> </Route>
         </Switch>
       </div>
