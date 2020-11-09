@@ -11,7 +11,7 @@ function App() {
       <div className="main-container">
         <Switch>
           <Route exact path="/"><Home /> </Route>
-          <Route path="/Voyager/overview/:country"><Overview /> </Route>
+          <Route path="/overview/:country"><Overview /> </Route>
         </Switch>
       </div>
     </HashRouter>
