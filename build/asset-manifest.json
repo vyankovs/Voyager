@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Voyager/static/css/main.173a3cfe.chunk.css",
-    "main.js": "/Voyager/static/js/main.6e724931.chunk.js",
-    "main.js.map": "/Voyager/static/js/main.6e724931.chunk.js.map",
+    "main.js": "/Voyager/static/js/main.ddf3621b.chunk.js",
+    "main.js.map": "/Voyager/static/js/main.ddf3621b.chunk.js.map",
     "runtime-main.js": "/Voyager/static/js/runtime-main.38d95472.js",
     "runtime-main.js.map": "/Voyager/static/js/runtime-main.38d95472.js.map",
     "static/css/2.e5041b2a.chunk.css": "/Voyager/static/css/2.e5041b2a.chunk.css",
     "static/js/2.39b419fb.chunk.js": "/Voyager/static/js/2.39b419fb.chunk.js",
     "static/js/2.39b419fb.chunk.js.map": "/Voyager/static/js/2.39b419fb.chunk.js.map",
     "index.html": "/Voyager/index.html",
-    "precache-manifest.3d7456bcbc052bf9a957c6733e03e0c1.js": "/Voyager/precache-manifest.3d7456bcbc052bf9a957c6733e03e0c1.js",
+    "precache-manifest.17f7937f5a9a8a0b3db50c2387f8a8dc.js": "/Voyager/precache-manifest.17f7937f5a9a8a0b3db50c2387f8a8dc.js",
     "service-worker.js": "/Voyager/service-worker.js",
     "static/css/2.e5041b2a.chunk.css.map": "/Voyager/static/css/2.e5041b2a.chunk.css.map",
     "static/css/main.173a3cfe.chunk.css.map": "/Voyager/static/css/main.173a3cfe.chunk.css.map",
@@ -28,6 +28,6 @@
     "static/css/2.e5041b2a.chunk.css",
     "static/js/2.39b419fb.chunk.js",
     "static/css/main.173a3cfe.chunk.css",
-    "static/js/main.6e724931.chunk.js"
+    "static/js/main.ddf3621b.chunk.js"
   ]
 }
