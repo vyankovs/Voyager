@@ -35,7 +35,7 @@ import TextField from '@material-ui/core/TextField';
                     onChange={e => {
                         
                     console.log(e.target.innerText)
-                        window.open(`/overview/${e.target.innerText}`)
+                        window.open(`/Voyager/#/overview/${data.title}`)
                     }}
                      
                         id="countryInput"
