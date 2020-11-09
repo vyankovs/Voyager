@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 const Topbar = ({data}) => {
   
@@ -12,7 +12,7 @@ const Topbar = ({data}) => {
           <small className="text-muted">Region</small>
         </li>
         <li>
-          <img src={data.flag} width="40" height="30"></img>
+          <img src={data.flag} width="40" height="30" style={{border : "1px solid black"}}></img>
           <small className="text-muted">Flag</small>
         </li>
         <li>
