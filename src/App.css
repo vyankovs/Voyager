@@ -147,7 +147,7 @@ body {
   margin-top: 2em;
 }
 
-.cards {
+/* .cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1em;
@@ -185,7 +185,7 @@ body {
 
 .card .btn {
   font-size: 0.7rem;
-}
+} */
 
 /* ===================================================Scroller */
 
@@ -233,6 +233,7 @@ body {
   color: var(--lightgray);
   padding-left: 26px;
 }
+
 /* .timeline ul li a:hover {
   font-size: 20px;
 } */

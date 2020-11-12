@@ -40,7 +40,7 @@ const Weather = ({ placeId, center }) => {
         {photos.slice(0, 9).map((photo, k) => (
             <img
               key={k}
-              src={`${PhotoAPI}?&key=${key}&photoreference=${photo.photo_reference}&maxheight=200`}
+              src={`${PhotoAPI}?&key=${key}&photoreference=${photo.photo_reference}&maxheight=100&maxwidth=100`}
             />
           )) }
           </div>
@@ -67,6 +67,4 @@ const Weather = ({ placeId, center }) => {
 };
 
 export default Weather;
-// ChIJBUVa4U7P1EAR_kYBF9IxSXY
 
-//CkQ0AAAA1Yzg1ABq64kwJ9DN50fE_xZe9XHKF-tPCYHdPgO7PfBnkSbeeDonPwKpcf5wTRpgE_C7Bctu3jVSb9ozRARwGhIQwtE10z0UFwG0_zNyxnibCRoUFLBGZ87cmhlfwBsfe-bRbREPIvk
