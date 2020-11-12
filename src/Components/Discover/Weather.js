@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 let APIurl =
   "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/details";
 let PhotoAPI = "https://maps.googleapis.com/maps/api/place/photo";
-let key = "AIzaSyDPUOSET_JlnAy_G8T1AFnMkExbJrz4UmE";
+let key = process.env.REACT_APP_GOOGLE_KEY;
 
 const Weather = ({ placeId, center }) => {
   const [photos, setPhotos] = useState([]);
