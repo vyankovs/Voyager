@@ -17,6 +17,7 @@ const Map = ({ city, setPlaceId, center, setCenter }) => {
         .then((data) => {
           data && data.results[0] &&
           setCenter(data.results[0].geometry.location);
+          console.log(data)
           setZoom(12);
           data.results[0] && setPlaceId(data.results[0].place_id);
           setLoading(false)
