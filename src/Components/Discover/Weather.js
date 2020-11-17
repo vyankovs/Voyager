@@ -9,8 +9,7 @@ let key = process.env.REACT_APP_GOOGLE_KEY;
 
 const Weather = ({ placeId, center }) => {
   const [photos, setPhotos] = useState([]);
-  // const [temperature, setTemperature] = useState("");
-  // const [icon, setIcon] = useState("");
+  
   const [weatherObj, setWeatherObj] = useState(null);
 
   useEffect(() => {
@@ -24,8 +23,7 @@ const Weather = ({ placeId, center }) => {
       )
         .then((data) => data.json())
         .then((weather) => {
-          // setTemperature(Math.floor(weather.main.temp));
-          // setIcon(weather.weather[0].icon);
+        
           setWeatherObj(weather);
         });
     }
