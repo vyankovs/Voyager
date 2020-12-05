@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ModalPhoto from "./ModalPhoto.js"
 
 
 
@@ -9,8 +10,9 @@ let key = process.env.REACT_APP_GOOGLE_KEY;
 
 const Weather = ({ placeId, center }) => {
   const [photos, setPhotos] = useState([]);
-  
   const [weatherObj, setWeatherObj] = useState(null);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalImg, setModalImg] = useState("");
 
   useEffect(() => {
     console.log(center);
@@ -37,6 +39,10 @@ const Weather = ({ placeId, center }) => {
         <div>
         {photos.slice(0, 9).map((photo, k) => (
             <img
+            onClick= {()=>{
+              setModalOpen(true);
+              setModalImg(photo.photo_reference)
+              }}
               key={k}
               src={`${PhotoAPI}?&key=${key}&photoreference=${photo.photo_reference}&maxheight=100&maxwidth=100`}
             />
@@ -45,6 +51,9 @@ const Weather = ({ placeId, center }) => {
           : <img style = {{height:"300px", width:"300px"}} src={"https://vcunited.club/wp-content/uploads/2020/01/No-image-available-2.jpg"}></img>}
         
       </div>
+
+       <ModalPhoto show={modalOpen} handleClose={()=>setModalOpen(false)} photo={modalImg} photos={photos} keyAPI={key} PhotoAPI={PhotoAPI}/>
+
       <div className="forecast">
         <p>Weather</p>
         {weatherObj ? (
