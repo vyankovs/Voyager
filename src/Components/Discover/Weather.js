@@ -13,13 +13,15 @@ const Weather = ({ placeId, center }) => {
   const [weatherObj, setWeatherObj] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
   const [modalImg, setModalImg] = useState("");
+  const [photoIndex, setPhotoIndex] = useState("");
 
   useEffect(() => {
     console.log(center);
     if (placeId) {
       fetch(`${APIurl}/json?key=${key}&place_id=${placeId}&fields=photos`)
         .then((data) => data.json())
-        .then((imgs) => setPhotos(imgs.result.photos));
+        .then((imgs) => {setPhotos(imgs.result.photos);
+          console.log(imgs.result.photos)});
       fetch(
         `https://api.openweathermap.org/data/2.5/weather?lat=${center.lat}&lon=${center.lng}&appid=98cb06cb2b40f453cd89033992ff765a&units=metric`
       )
@@ -36,23 +38,28 @@ const Weather = ({ placeId, center }) => {
         <p>Photos of the city</p>
        
        { photos ? 
+        
         <div>
         {photos.slice(0, 9).map((photo, k) => (
             <img
+            style={{cursor:"pointer"}}
             onClick= {()=>{
               setModalOpen(true);
-              setModalImg(photo.photo_reference)
+              setModalImg(photo);
+              setPhotoIndex(photos.indexOf(photo));
+              console.log(photos.indexOf(photo))
               }}
               key={k}
               src={`${PhotoAPI}?&key=${key}&photoreference=${photo.photo_reference}&maxheight=100&maxwidth=100`}
             />
+            
           )) }
           </div>
           : <img style = {{height:"300px", width:"300px"}} src={"https://vcunited.club/wp-content/uploads/2020/01/No-image-available-2.jpg"}></img>}
         
       </div>
 
-       <ModalPhoto show={modalOpen} handleClose={()=>setModalOpen(false)} photo={modalImg} photos={photos} keyAPI={key} PhotoAPI={PhotoAPI}/>
+       <ModalPhoto show={modalOpen} handleClose={()=>setModalOpen(false)} photo={modalImg} photos={photos} keyAPI={key} photoIndex={photoIndex} PhotoAPI={PhotoAPI}/>
 
       <div className="forecast">
         <p>Weather</p>
