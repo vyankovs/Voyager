@@ -35,8 +35,8 @@ const Map = ({ city, setPlaceId, center, setCenter }) => {
         center={center}
         defaultZoom={2}
         zoom={zoom}
-        heignt="400"
-        width="600"
+        heignt="500"
+        width="400"
       ></GoogleMapReact>
    }
     </div>

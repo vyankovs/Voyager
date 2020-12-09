@@ -19,7 +19,7 @@ export const Navigation = ({country}) => {
     return (
         <Fragment>
 
-            <MDBNavbar color="unique-color" dark expand="md">
+            <MDBNavbar color="info-color-dark" dark expand="md">
                 <MDBNavbarBrand href="/"><Image width="50px" src={Globe} />
                 </MDBNavbarBrand>
 
@@ -37,9 +37,7 @@ export const Navigation = ({country}) => {
                         <MDBNavItem >
                             <MDBNavLink className="mr-4" to="/">Home</MDBNavLink>
                         </MDBNavItem>
-                        {/* <MDBNavItem>
-                            <MDBNavLink className="mr-4" to="/whattodo">What to do</MDBNavLink>
-                        </MDBNavItem> */}
+                        
                         
                     </MDBNavbarNav>
 
