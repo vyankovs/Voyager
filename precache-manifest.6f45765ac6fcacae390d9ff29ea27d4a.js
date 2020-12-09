@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "72512dc0af8a87324b4bd2ff9ce11d31",
+    "revision": "e42e3103d70d334caf2d0f0ca640f4d2",
     "url": "/Voyager/index.html"
   },
   {
-    "revision": "b8a2d3f8bbf1bfc23fbd",
+    "revision": "1b3d2b05b2a1ad7e33cb",
     "url": "/Voyager/static/css/2.e5041b2a.chunk.css"
   },
   {
-    "revision": "786e394cb0133cdfd64d",
-    "url": "/Voyager/static/css/main.82bd96c3.chunk.css"
+    "revision": "999a001198a05d9d4253",
+    "url": "/Voyager/static/css/main.9ec4a028.chunk.css"
   },
   {
-    "revision": "b8a2d3f8bbf1bfc23fbd",
-    "url": "/Voyager/static/js/2.8518decb.chunk.js"
+    "revision": "1b3d2b05b2a1ad7e33cb",
+    "url": "/Voyager/static/js/2.0056dd82.chunk.js"
   },
   {
     "revision": "622fffac73e56111dcf3fea0a2e83cfb",
-    "url": "/Voyager/static/js/2.8518decb.chunk.js.LICENSE.txt"
+    "url": "/Voyager/static/js/2.0056dd82.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "786e394cb0133cdfd64d",
-    "url": "/Voyager/static/js/main.74b2a133.chunk.js"
+    "revision": "999a001198a05d9d4253",
+    "url": "/Voyager/static/js/main.5c4252b7.chunk.js"
   },
   {
     "revision": "7ee0b9b9b9c802ac207e",
