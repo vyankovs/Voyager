@@ -29,15 +29,15 @@ export default function ModalPhoto ({show, handleClose, photos, photo, keyAPI: k
   }, [index])
 
     return (
-        <Modal  centered dialogClassName="modalFitWidth" show={show} onHide={handleClose}>
+        <Modal size="lg" centered dialogClassName="modalFitWidth" show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           {/* <Modal.Title>Modal heading</Modal.Title> */}
         </Modal.Header>
         <Modal.Body>
-        <div style={{position:"relative"}}>
+        <div style={{height:"70vh", textAlign:"center"}}>
         <button className="prev" onClick={()=>changeIndex(-1)} style={{position:"absolute", left:"20px"}}>&#10094;</button>
         <button className="next" onClick={()=>changeIndex(1)} style={{position:"absolute", right:"20px"}}>&#10095;</button>
-        <img src={src}/>
+        <img style={{width:"100%", height:"100%", objectFit:"cover"}} src={src}/>
         </div>
         </Modal.Body>
         

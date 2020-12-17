@@ -262,9 +262,11 @@ body {
 
 .map {
   grid-area: map;
+  margin: 0 auto;
   margin-top: 3em;
-  width: 600px;
-  height: 400px;
+  width: 90%;
+  height: 50%;
+  min-height: 500px;
 }
 
 /* =================================================== weather*/
@@ -273,6 +275,7 @@ body {
   grid-area: weather;
   display: grid;
   grid-template-rows: 1fr 1fr;
+  margin: 0 auto;
 }
 
 .photos {

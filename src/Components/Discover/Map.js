@@ -26,7 +26,7 @@ const Map = ({ city, setPlaceId, center, setCenter }) => {
   }, [city]);
 
   return (
-    <div className="map">
+    <div className="map" >
    { loading? 
    <div style={{padding:"100px 0", textAlign:"center"}}><iframe src="https://giphy.com/embed/3oEjI6SIIHBdRxXI40" width="180" height="180" frameBorder="0" className="giphy-embed"  ></iframe></div>
    :
@@ -35,8 +35,7 @@ const Map = ({ city, setPlaceId, center, setCenter }) => {
         center={center}
         defaultZoom={2}
         zoom={zoom}
-        heignt="500"
-        width="400"
+      
       ></GoogleMapReact>
    }
     </div>
