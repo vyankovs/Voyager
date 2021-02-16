@@ -28,7 +28,7 @@ const Map = ({ city, setPlaceId, center, setCenter }) => {
   return (
     <div className="map" >
    { loading? 
-   <div style={{padding:"100px 0", textAlign:"center"}}><iframe src="https://giphy.com/embed/3oEjI6SIIHBdRxXI40" width="180" height="180" frameBorder="0" className="giphy-embed"  ></iframe></div>
+   <div style={{padding:"100px 0", textAlign:"center"}}><iframe src="https://i.stack.imgur.com/qq8AE.gif" width="180" height="180" frameBorder="0" className="giphy-embed"  ></iframe></div>
    :
       <GoogleMapReact
         bootstrapURLKeys={{ key }}
