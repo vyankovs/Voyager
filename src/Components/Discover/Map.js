@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import GoogleMapReact from "google-map-react";
 let APIurl =
-  "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/textsearch";
+  "https://maps.googleapis.com/maps/api/place/textsearch";
 let key = process.env.REACT_APP_GOOGLE_KEY;
 
 

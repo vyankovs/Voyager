@@ -12,17 +12,14 @@ import TextField from '@material-ui/core/TextField';
     //  const [countrySelected, setCountrySelected] = useState ('');
 
      useEffect(()=>{
-        fetch('https://cors-anywhere.herokuapp.com/http://country.io/names.json').then((res) => res.json()).then((data) => {
+        fetch('http://country.io/names.json').then((res) => res.json()).then((data) => {
             console.log(data)
              setCountries(Object.values(data))
+             console.log(countries)
           });
      },[])
     
-    //  useEffect(()=>{
-    //      if(countrySelected ){
-    //     passCountry(countrySelected) }
-    //  },[countrySelected])
-
+    
     return (
         <Fragment>
             <div id="search-menu" expand="lg">
