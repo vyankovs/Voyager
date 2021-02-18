@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dd066340b1bb9a0e74dda3aa1ce67f4a",
+    "revision": "8859bc4adee6306ba72def6830b5483b",
     "url": "/Voyager/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Voyager/static/css/2.4202ace2.chunk.css"
   },
   {
-    "revision": "f676a6f59fda97c9bac9",
+    "revision": "061e3219baf7388b6ad1",
     "url": "/Voyager/static/css/main.67d4f7c6.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Voyager/static/js/2.0056dd82.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f676a6f59fda97c9bac9",
-    "url": "/Voyager/static/js/main.8dc13cfe.chunk.js"
+    "revision": "061e3219baf7388b6ad1",
+    "url": "/Voyager/static/js/main.3b47885b.chunk.js"
   },
   {
     "revision": "7ee0b9b9b9c802ac207e",
