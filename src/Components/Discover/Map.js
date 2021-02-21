@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import GoogleMapReact from "google-map-react";
 let APIurl =
-  "https://maps.googleapis.com/maps/api/place/textsearch";
+  "https://cors.bridged.cc/https://maps.googleapis.com/maps/api/place/textsearch";
 let key = process.env.REACT_APP_GOOGLE_KEY;
 
 
@@ -12,8 +12,13 @@ const Map = ({ city, setPlaceId, center, setCenter }) => {
   useEffect(() => {
     if (city) {
       setLoading(true);
-      fetch(`${APIurl}/json?query=${city}&language=en&key=${key}`)
-        .then((res) => res.json())
+      fetch(`${APIurl}/json?query=${city}&language=en&key=${key}`, {
+        method: "GET",
+        // mode: "no-cors"
+      })
+      .then((res) => {
+        console.log(res)
+        return res.json()})
         .then((data) => {
           data && data.results[0] &&
           setCenter(data.results[0].geometry.location);
@@ -21,7 +26,7 @@ const Map = ({ city, setPlaceId, center, setCenter }) => {
           setZoom(12);
           data.results[0] && setPlaceId(data.results[0].place_id);
           setLoading(false)
-        });
+        }).catch(err=> console.log(err))
     }
   }, [city]);
 

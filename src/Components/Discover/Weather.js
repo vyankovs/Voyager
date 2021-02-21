@@ -4,7 +4,7 @@ import ModalPhoto from "./ModalPhoto.js"
 
 
 let APIurl =
-  "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/details";
+  "https://cors.bridged.cc/https://maps.googleapis.com/maps/api/place/details";
 let PhotoAPI = "https://maps.googleapis.com/maps/api/place/photo";
 let key = process.env.REACT_APP_GOOGLE_KEY;
 
