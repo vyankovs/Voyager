@@ -12,10 +12,7 @@ const Map = ({ city, setPlaceId, center, setCenter }) => {
   useEffect(() => {
     if (city) {
       setLoading(true);
-      fetch(`${APIurl}/json?query=${city}&language=en&key=${key}`, {
-        method: "GET",
-        // mode: "no-cors"
-      })
+      fetch(`${APIurl}/json?query=${city}&language=en&key=${key}`)
       .then((res) => {
         console.log(res)
         return res.json()})
